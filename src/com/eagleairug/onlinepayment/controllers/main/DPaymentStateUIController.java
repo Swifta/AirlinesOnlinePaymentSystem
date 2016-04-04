@@ -21,6 +21,7 @@ public class DPaymentStateUIController extends DPaymentStateUIDesign implements 
 		
 	}
 
+
 	@Override
 	public void initFooter(Component comp) {
 		// TODO Auto-generated method stub

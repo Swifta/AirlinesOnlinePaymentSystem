@@ -6,6 +6,8 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
+import com.vaadin.ui.UI;
+import com.vaadin.ui.Window;
 
 public class DDetailsUIController extends DDetailsUIDesign implements UIControllerInterface {
 	
@@ -85,7 +87,16 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 			@Override
 			public void buttonClick(ClickEvent event) {
 				
-				new DPaymentStateUIController(guid);
+				Window processingPopup = new Window("Processing...");
+				processingPopup.setContent(new DPaymentStateUIController(guid));
+				processingPopup.center();
+				processingPopup.setClosable(false);
+				processingPopup.setEnabled(false);
+				processingPopup.setModal(true);
+				processingPopup.setDraggable(false);
+				processingPopup.setResizable(false);
+				processingPopup.setSizeUndefined();
+				UI.getCurrent().addWindow(processingPopup);
 			}
 			
 		});

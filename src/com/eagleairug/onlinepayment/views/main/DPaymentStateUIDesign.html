@@ -4,123 +4,36 @@
   <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src&quot;,&quot;THEME&quot;:&quot;eagle&quot;}">
  </head> 
  <body> 
-  <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-pay" margin-bottom="true" _id="cPay"> 
-   <vaadin-vertical-layout primary-style-name="v-verticallayout" width="1178px" :center=""> 
-    <vaadin-horizontal-layout primary-style-name="v-horizontallayout" width-full="true" height="105px" _id="cPayStepsHead"> 
-     <vaadin-horizontal-layout primary-style-name="v-horizontallayout" width-full="true" _id="cPayStepIndicator" :middle="" :center="" :expand=""> 
-      <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-steps" _id="cSteps"> 
-       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-step-indicator sn-z-index-step-one" _id="cStepOne"> 
-        <vaadin-horizontal-layout primary-style-name="v-horizontallayout" margin-left="true"> 
-         <vaadin-label style-name="sn-step-no" size-auto="true" plain-text="">
-           1 
-         </vaadin-label> 
-        </vaadin-horizontal-layout> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true" margin-right="true"> 
-         <vaadin-label style-name="sn-step-word" size-auto="true" plain-text="">
-           Step One 
-         </vaadin-label> 
-         <vaadin-label style-name="sn-step-role" size-auto="true" plain-text="">
-           Booking Reference 
-         </vaadin-label> 
-        </vaadin-vertical-layout> 
-       </vaadin-horizontal-layout> 
-       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-step-indicator sn-step-indicator-done sn-z-index-step-two" _id="cStepOne2"> 
-        <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-no-next" margin-left="true"> 
-         <vaadin-label style-name="sn-step-no" size-auto="true" plain-text="">
-           2 
-         </vaadin-label> 
-        </vaadin-horizontal-layout> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true" margin-right="true"> 
-         <vaadin-label style-name="sn-step-word" size-auto="true" plain-text="">
-           Step Two 
-         </vaadin-label> 
-         <vaadin-label style-name="sn-step-role" size-auto="true" plain-text="">
-           MTN Mobile Money No. 
-         </vaadin-label> 
-        </vaadin-vertical-layout> 
-       </vaadin-horizontal-layout> 
-       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-step-indicator sn-step-indicator-next sn-z-index-step-three" _id="cStepOne3"> 
-        <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-no-next" margin-left="true"> 
-         <vaadin-label style-name="sn-step-no" size-auto="true" plain-text="">
-           3 
-         </vaadin-label> 
-        </vaadin-horizontal-layout> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true" margin-right="true"> 
-         <vaadin-label style-name="sn-step-word" size-auto="true" plain-text="">
-           Step Three 
-         </vaadin-label> 
-         <vaadin-label style-name="sn-step-role" size-auto="true" plain-text="">
-           Initiating Payment... 
-         </vaadin-label> 
-        </vaadin-vertical-layout> 
-       </vaadin-horizontal-layout> 
-       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-step-indicator sn-step-indicator-next sn-z-index-step-three sn-step-finish" _id="cStepOne4"> 
-        <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-no-next" margin-left="true"> 
-         <vaadin-label style-name="sn-step-no" size-auto="true" plain-text="">
-           4 
-         </vaadin-label> 
-        </vaadin-horizontal-layout> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true" margin-right="true"> 
-         <vaadin-label style-name="sn-step-word" size-auto="true" plain-text="">
-           Done 
-         </vaadin-label> 
-         <vaadin-label style-name="sn-step-role" size-auto="true" plain-text="">
-           Finish 
-         </vaadin-label> 
-        </vaadin-vertical-layout> 
-       </vaadin-horizontal-layout> 
-      </vaadin-horizontal-layout> 
-     </vaadin-horizontal-layout> 
+  <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-pay sn-c-pay-opt" width="600px" _id="cPay"> 
+   <vaadin-vertical-layout primary-style-name="v-verticallayout" _id="cMMRightContent" :center="" :expand=""> 
+    <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-panel-head sn-panel-head-card sn-panel-head-step-b-ref" width-full="true" margin="true" _id="mmPanelHead2"> 
+     <vaadin-label style-name="bold" plain-text="" :expand="">
+       Now Processing... Please check your phone for prompts. 
+     </vaadin-label> 
     </vaadin-horizontal-layout> 
-    <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-pay-opt" width-full="true" _id="cPayStepsBody" :expand=""> 
-     <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-mm-op sn-c-mm-op-left" spacing="true" width-auto="true" height-full="true" _id="cMMLeftContent"> 
-      <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-mm-op" width="227px" _id="cMMOp"> 
-       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-sel-mm-top" width-full="true" _id="cMM"> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" spacing="true" size-auto="true" margin-top="true" :center=""> 
-         <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-sel-op-logo" width="120px" height="120px" :center=""></vaadin-horizontal-layout> 
-         <vaadin-label style-name="large bold" size-auto="true" plain-text="">
-           MTN Mobile Money 
-         </vaadin-label> 
-        </vaadin-vertical-layout> 
-       </vaadin-horizontal-layout> 
-       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-mm-slogan" margin-left="true" margin-right="true" margin-top="true" _id="cMMSlogan"> 
-        <vaadin-label plain-text="">
-          Fast. Reliable. Secure. 
+    <vaadin-panel style-name="sn-mm-panel sn-mm-right-c-panel" _id="mmPanel2" :center="" :expand=""> 
+     <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-right-panel-v" spacing="true" margin="true"> 
+      <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-ref-form sn-c-form sn-c-booking-details sn-no-border-left" size-auto="true" margin="true" _id="cBookingDetails" :center=""> 
+       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-cbd-head" width="259px" margin-top="true" :center=""> 
+        <vaadin-label style-name="bold spinner" width="442px" plain-text="" :center=""></vaadin-label> 
+        <vaadin-label width-auto="true" height="30px" plain-text="" :center="">
+          Processing... 
         </vaadin-label> 
+       </vaadin-vertical-layout> 
+       <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true"> 
+        <vaadin-label style-name="bold light tiny sn-bolder" size-auto="true" plain-text="">
+          Standby for the payment approval request prompt on your phone with number below: 
+        </vaadin-label> 
+        <vaadin-horizontal-layout primary-style-name="v-horizontallayout" :center=""> 
+         <vaadin-button icon="fonticon://FontAwesome/f095" style-name="icon-only borderless quiet tiny" plain-text=""></vaadin-button> 
+         <vaadin-label size-auto="true" plain-text="" :center="">
+           0778777875 
+         </vaadin-label> 
+        </vaadin-horizontal-layout> 
        </vaadin-vertical-layout> 
       </vaadin-vertical-layout> 
      </vaadin-vertical-layout> 
-     <vaadin-vertical-layout primary-style-name="v-verticallayout" _id="cMMRightContent" :expand=""> 
-      <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-panel-head sn-panel-head-card sn-panel-head-step-b-ref" width-full="true" margin="true" _id="mmPanelHead2"> 
-       <vaadin-label style-name="bold" plain-text="" :expand="">
-         Please chech your phone and follow the prompts. Processing... 
-       </vaadin-label> 
-      </vaadin-horizontal-layout> 
-      <vaadin-panel style-name="sn-mm-panel sn-mm-right-c-panel" _id="mmPanel2" :expand=""> 
-       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-right-panel-v" spacing="true" margin-top="true" margin-bottom="true"> 
-        <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-ref-form sn-c-form sn-c-booking-details" size-auto="true" margin="true" _id="cBookingDetails" :center=""> 
-         <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-cbd-head" width="259px" margin-top="true" :center=""> 
-          <vaadin-label style-name="bold spinner" width="442px" plain-text="" :center=""></vaadin-label> 
-          <vaadin-label width-auto="true" height="30px" plain-text="" :center="">
-            Processing... 
-          </vaadin-label> 
-         </vaadin-vertical-layout> 
-         <vaadin-vertical-layout primary-style-name="v-verticallayout" size-auto="true"> 
-          <vaadin-label style-name="bold light tiny sn-bolder" size-auto="true" plain-text="">
-            Standby for the payment approval request prompt on your phone with number below: 
-          </vaadin-label> 
-          <vaadin-horizontal-layout primary-style-name="v-horizontallayout" :center=""> 
-           <vaadin-button icon="fonticon://FontAwesome/f095" style-name="icon-only borderless quiet tiny" plain-text=""></vaadin-button> 
-           <vaadin-label size-auto="true" plain-text="" :center="">
-             0778777875 
-           </vaadin-label> 
-          </vaadin-horizontal-layout> 
-         </vaadin-vertical-layout> 
-        </vaadin-vertical-layout> 
-       </vaadin-vertical-layout> 
-      </vaadin-panel> 
-     </vaadin-vertical-layout> 
-    </vaadin-horizontal-layout> 
+    </vaadin-panel> 
    </vaadin-vertical-layout> 
   </vaadin-vertical-layout>  
  </body>

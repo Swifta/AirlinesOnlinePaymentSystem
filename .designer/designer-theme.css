@@ -13652,6 +13652,10 @@ div.v-layout.v-horizontal.v-widget {
 	border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.eagle .sn-c-ref-form.sn-c-booking-details.sn-no-border-left {
+	border-left: none;
+}
+
 .eagle .sn-cbd-head {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
