@@ -13666,6 +13666,10 @@ div.v-layout.v-horizontal.v-widget {
 	font-weight: bolder;
 }
 
+.eagle .sn-bolder {
+	font-weight: 600;
+}
+
 .eagle .sn-cbd-head .v-label {
 	color: #5168d8;
 	font-weight: bolder;
