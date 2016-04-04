@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src&quot;,&quot;THEME&quot;:&quot;eagle&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-full="true"> 
+   <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-eagle-header-c" _id="cHeader"> 
+    <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-eagle-blue" height="175px"> 
+     <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-eagle-white" height="54px" :bottom=""></vaadin-vertical-layout> 
+    </vaadin-vertical-layout> 
+    <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-logo-area sn-side-page-margin" width="228px" height="162px" _id="logoArea"> 
+     <vaadin-button style-name="icon-align-top sn-img-button-link" size-full="true" plain-text="" :expand="">
+       Online Flight Payment 
+     </vaadin-button> 
+    </vaadin-vertical-layout> 
+   </vaadin-vertical-layout> 
+   <vaadin-panel style-name="sn-eagle-panel-no-border" size-full="true" _id="cMidContent" :bottom="" :expand=""> 
+    <vaadin-vertical-layout primary-style-name="v-verticallayout"> 
+     <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-pay" height="540px" _id="cPay" :center=""> 
+      <vaadin-vertical-layout primary-style-name="v-verticallayout" width="968px" height="507px" :center=""> 
+       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-pay-opt" size-full="true" _id="cPayOpt" :expand=""> 
+        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-full="true" _id="cMobileMoney"> 
+         <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-panel-head" width-full="true" margin="true" _id="mmPanelHead"> 
+          <vaadin-label style-name="sn-mm-lb" plain-text="" :center="" :expand="">
+            Mobile Money 
+          </vaadin-label> 
+         </vaadin-horizontal-layout> 
+         <vaadin-panel style-name="sn-mm-panel" size-full="true" _id="mmPanel" :expand=""> 
+          <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-mm-list" margin-top="true" _id="cMMList"> 
+           <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-mm-list-first sn-mm-list-active" spacing="true" width-full="true" height="78px" margin-left="true" margin-right="true"> 
+            <vaadin-image style-name="sn-mm-image" width="80px" height="60px" :middle=""></vaadin-image> 
+            <vaadin-label style-name="large bold" plain-text="" :middle="" :expand="">
+              MTN Mobile Money 
+            </vaadin-label> 
+           </vaadin-horizontal-layout> 
+           <vaadin-horizontal-layout visible="false" primary-style-name="v-horizontallayout" style-name="sn-mm-list-btn" spacing="true" width-full="true" height="78px" _id="btnTrial"> 
+            <vaadin-button icon="fonticon://FontAwesome/f03e" size-full="true" plain-text="" :expand="">
+              Button 
+            </vaadin-button> 
+           </vaadin-horizontal-layout> 
+           <vaadin-horizontal-layout primary-style-name="v-horizontallayout" spacing="true" width-full="true" height="78px" margin-left="true" margin-right="true"> 
+            <vaadin-image style-name="sn-mm-image" width="80px" height="60px" :middle=""></vaadin-image> 
+            <vaadin-label style-name="large bold" plain-text="" :middle="" :expand="">
+              MTN Mobile Money 
+            </vaadin-label> 
+           </vaadin-horizontal-layout> 
+           <vaadin-horizontal-layout primary-style-name="v-horizontallayout" spacing="true" width-full="true" height="78px" margin-left="true" margin-right="true"> 
+            <vaadin-image style-name="sn-mm-image" width="80px" height="60px" :middle=""></vaadin-image> 
+            <vaadin-label style-name="large bold" plain-text="" :middle="" :expand="">
+              MTN Mobile Money 
+            </vaadin-label> 
+           </vaadin-horizontal-layout> 
+          </vaadin-vertical-layout> 
+         </vaadin-panel> 
+        </vaadin-vertical-layout> 
+        <vaadin-vertical-layout primary-style-name="v-verticallayout" size-full="true" _id="cCard" :right=""> 
+         <vaadin-panel style-name="sn-mm-panel" size-full="true" _id="mmPanel2" :expand=""> 
+          <vaadin-vertical-layout primary-style-name="v-verticallayout" size-full="true"> 
+           <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-panel-head sn-panel-head-card" width-full="true" margin="true" _id="mmPanelHead2"> 
+            <vaadin-label size-auto="true" plain-text="">
+              Card 
+            </vaadin-label> 
+           </vaadin-horizontal-layout> 
+           <vaadin-vertical-layout primary-style-name="v-verticallayout" size-full="true" :expand=""></vaadin-vertical-layout> 
+          </vaadin-vertical-layout> 
+         </vaadin-panel> 
+        </vaadin-vertical-layout> 
+       </vaadin-horizontal-layout> 
+      </vaadin-vertical-layout> 
+     </vaadin-vertical-layout> 
+     <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-ads" width-full="true" _id="cAds"> 
+      <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-inner-cards-c" width-full="true" :center="" :expand=""> 
+       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-ad-card sn-left-ad-card" width="375px" height="338px"> 
+        <vaadin-label size-auto="true" plain-text="" :middle="" :center="">
+          MM Convinience 
+        </vaadin-label> 
+       </vaadin-vertical-layout> 
+       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-ad-card" width="375px" height="338px"> 
+        <vaadin-label size-auto="true" plain-text="" :middle="" :center="">
+          Card Advantage 
+        </vaadin-label> 
+       </vaadin-vertical-layout> 
+       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-ad-card sn-right-ad-card" width="375px" height="338px"> 
+        <vaadin-label size-auto="true" plain-text="" :middle="" :center="">
+          Maximum Security 
+        </vaadin-label> 
+       </vaadin-vertical-layout> 
+      </vaadin-horizontal-layout> 
+     </vaadin-horizontal-layout> 
+    </vaadin-vertical-layout> 
+   </vaadin-panel> 
+   <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-footer-c" height="55px" _id="cFooter" :bottom=""> 
+    <vaadin-horizontal-layout primary-style-name="v-horizontallayout" width-full="true" _id="cFooterInner" :middle="" :center=""> 
+     <vaadin-label size-auto="true" plain-text="">
+       Copyright @ Eagle Air Uganda 2016-2016. All rights reserved. 
+     </vaadin-label> 
+     <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-right-footer-c" spacing="true" _id="cFooterRight" :right=""> 
+      <vaadin-button style-name="borderless" height="15px" plain-text="">
+        Eagle Air Main Website 
+      </vaadin-button> 
+      <vaadin-button style-name="borderless" height="15px" plain-text="">
+        Terms 
+      </vaadin-button> 
+      <vaadin-button style-name="borderless" height="15px" plain-text="">
+        Disclaimer 
+      </vaadin-button> 
+      <vaadin-button style-name="borderless" height="15px" plain-text="">
+        About 
+      </vaadin-button> 
+      <vaadin-button style-name="borderless sn-f-last" height="16px" plain-text="">
+        FAQs 
+      </vaadin-button> 
+     </vaadin-horizontal-layout> 
+    </vaadin-horizontal-layout> 
+   </vaadin-vertical-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
