@@ -7,7 +7,7 @@ import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.UI;
 
-public class DHomeUIController  extends DHomeUIDesign implements UIControllerInterface {
+public class DHomeUIController  extends DHomeUIDesign implements UIController {
 
 
 	/**

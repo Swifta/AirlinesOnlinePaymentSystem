@@ -7,7 +7,7 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 
-public class DBookingReferenceUIController extends DBookingReferenceUIDesign implements UIControllerInterface {
+public class DBookingReferenceUIController extends DBookingReferenceUIDesign implements UIController {
 
 	/**
 	 * 

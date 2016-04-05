@@ -5,7 +5,7 @@ import com.eagleairug.onlinepayment.views.main.DPaymentStateUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
 
-public class DPaymentStateUIController extends DPaymentStateUIDesign implements UIControllerInterface {
+public class DPaymentStateUIController extends DPaymentStateUIDesign implements UIController {
 
 	/**
 	 * 

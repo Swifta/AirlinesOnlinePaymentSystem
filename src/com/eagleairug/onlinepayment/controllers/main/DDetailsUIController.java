@@ -9,7 +9,7 @@ import com.vaadin.ui.Component;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.Window;
 
-public class DDetailsUIController extends DDetailsUIDesign implements UIControllerInterface {
+public class DDetailsUIController extends DDetailsUIDesign implements UIController {
 	
 	private static final long serialVersionUID = -8262218659427298935L;
 	private DHomeUIDesign guid;

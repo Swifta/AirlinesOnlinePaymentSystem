@@ -6,7 +6,7 @@ import com.vaadin.ui.Component;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.VerticalLayout;
 
-public interface UIControllerInterface {
+public interface UIController {
 	
 	void initDefaultUI(DHomeUIDesign guid);
 	void initFooter(Component comp);

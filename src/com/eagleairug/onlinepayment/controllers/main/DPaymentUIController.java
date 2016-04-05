@@ -8,7 +8,7 @@ import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 
-public class DPaymentUIController extends DPaymentUIDesign implements UIControllerInterface {
+public class DPaymentUIController extends DPaymentUIDesign implements UIController {
 
 	
 	private static final long serialVersionUID = 7589904000143836097L;
