@@ -14034,3 +14034,28 @@ div.v-layout.v-horizontal.v-widget {
 .eagle .sn-ref-left-content-panel {
 	background-color: #00f;
 }
+
+.eagle .sn-username-dropdown-c.sn-ref {
+	top: 16px;
+}
+
+.eagle .sn-username-dropdown-c.sn-ref .v-button:focus, .eagle .sn-username-dropdown-c.sn-ref .v-button:active {
+	border: none;
+}
+
+.eagle .sn-c-ref-form.sn-c-form.sn-ref {
+	box-shadow: 1px 1px 2px rgba(0, 0, 255, 0.1);
+	border-top: 1px solid rgba(0, 0, 255, 0.05);
+}
+
+.eagle .v-panel .sn-c-right-panel-v.sn-ref {
+	padding-bottom: 0px;
+}
+
+.eagle .sn-c-booking-details.sn-ref {
+	border: none;
+}
+
+.eagle .sn-c-booking-details.sn-ref {
+	background-color: #f3f4f8;
+}

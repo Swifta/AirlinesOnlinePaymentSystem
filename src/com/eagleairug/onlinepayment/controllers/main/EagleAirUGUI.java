@@ -2,7 +2,7 @@ package com.eagleairug.onlinepayment.controllers.main;
 
 import javax.servlet.annotation.WebServlet;
 
-import com.eagleairug.onlinepayment.views.main.PanelUIDesign;
+import com.eagleairug.onlinepayment.views.agent.PanelUIDesign;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
