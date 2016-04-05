@@ -168,11 +168,7 @@
     	
     }
     
-    .sn-left-menu-c {
-    	background-color: #000;
-    	border-left: none;
-    	border-bottom: none;
-    }
+    
     
     .sn-left-menu-c .v-button {
     
@@ -1213,6 +1209,68 @@
      	background-color: #f00;
      }
      
+     
+     
+     
+     
+     /************************Reference System specific styles **************/
+     
+    .sn-sys-name-small {
+     		font-size: 10pt;
+     		line-height: 18;
+     		font-weight: 600;
+     }
+     
+    .sn-side-page-margin.sn-ref {
+    	margin-left: 0;
+    }
+    
+    .sn-left-menu-c {
+    	border: none;
+    	border-bottom: none;
+    }
+    
+    .sn-footer-content.sn-ref {
+    	font-weight: normal;
+    }
+    
+    .sn-ad-card.sn-ref {
+    	box-shadow: 1px 3px 10px -8px blue;
+    	margin-left: 0px;
+        margin-right: 30px;
+    }
+    
+    .sn-ad-card.sn-ref.sn-last {
+        margin-right: 0px;
+       
+    }
+    
+     
+     .sn-c-ads.sn-ref {
+     	
+     	padding-left: 30px;
+    	padding-top: 5px;
+    	padding-bottom: 28px;
+    	background-colorx: #fff;
+    	padding-right: 30px;
+    	
+    }
+    
+    .sn-inner-cards-c .sn-ad-card {
+    	background-color: #fff;
+    }
+    
+   .sn-content-background-color {
+    		background-color: #f3f4f8;
+    }
+    
+    .sn-ref-left-content-panel {
+        background-color: #00f;
+    }
+    
+    
+    
+    
    
      
     
