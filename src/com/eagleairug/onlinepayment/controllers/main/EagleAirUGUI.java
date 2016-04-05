@@ -18,28 +18,8 @@ public class EagleAirUGUI extends UI {
 
 	@Override
 	protected void init(VaadinRequest request) {
-		
-    new DHomeUIController();
-  
-   
-		
-		
-		
-		//UI.getCurrent().setContent(new PanelUIDesign());
-		//UI.getCurrent().setContent(new BookingFormUIDesign());
-		
-		//VerticalLayout l = new BookingReportUIDesign();
-		//l.addListener(eventType, target, method);
-		
-		//Button btn = new Button();
-		
-		
-		//UI.getCurrent().setContent(new BookingReportUIDesign());
-		
-		
-		
-		
-		
+			new DHomeUIController();
+			//UI.getCurrent().setContent(new PanelUIDesign());
 	}
 	
 	
