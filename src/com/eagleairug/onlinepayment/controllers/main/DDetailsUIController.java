@@ -49,7 +49,7 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 			@Override
 			public void buttonClick(ClickEvent event) {
 				
-				new DHomeUIController(guid);
+				new DPaymentUIController(guid);
 				
 			}
 			

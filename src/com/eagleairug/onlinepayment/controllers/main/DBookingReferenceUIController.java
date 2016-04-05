@@ -51,7 +51,7 @@ public class DBookingReferenceUIController extends DBookingReferenceUIDesign imp
 			@Override
 			public void buttonClick(ClickEvent event) {
 				
-				new DHomeUIController(guid);
+				new DPaymentUIController(guid);
 				
 			}
 			

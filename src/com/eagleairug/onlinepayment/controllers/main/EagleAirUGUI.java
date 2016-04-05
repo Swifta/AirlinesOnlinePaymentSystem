@@ -2,7 +2,6 @@ package com.eagleairug.onlinepayment.controllers.main;
 
 import javax.servlet.annotation.WebServlet;
 
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -20,9 +19,9 @@ public class EagleAirUGUI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		
-   DGeneralUIDesign guid = new DGeneralUIDesign();
+   DHomeUIController guid = new DHomeUIController();
    UI.getCurrent().setContent(guid);
-   new DHomeUIController(guid);
+   
 		
 		
 		
