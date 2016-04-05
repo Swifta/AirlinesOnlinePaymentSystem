@@ -1,7 +1,7 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
 import com.eagleairug.onlinepayment.views.main.DBookingReferenceUIDesign;
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
@@ -14,14 +14,14 @@ public class DBookingReferenceUIController extends DBookingReferenceUIDesign imp
 	 */
 	
 	private static final long serialVersionUID = -3610153824639476015L;
-	private DGeneralUIDesign guid;
+	private DHomeUIDesign guid;
 
-	DBookingReferenceUIController(DGeneralUIDesign guid){
+	DBookingReferenceUIController(DHomeUIDesign guid){
 		init(guid);
 	}
 	
 	@Override
-	public void initDefaultUI(DGeneralUIDesign guid) {
+	public void initDefaultUI(DHomeUIDesign guid) {
 		
 		swap(guid, this);
 		
@@ -81,13 +81,13 @@ public class DBookingReferenceUIController extends DBookingReferenceUIDesign imp
 	
 
 	@Override
-	public DGeneralUIDesign getGeneralUIDesign() {
+	public DHomeUIDesign getGeneralUIDesign() {
 		
 		return this.guid;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DGeneralUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIDesign guid) {
 		
 		this.guid = guid;
 		

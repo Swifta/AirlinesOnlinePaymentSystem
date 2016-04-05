@@ -1,7 +1,8 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
 import java.io.Serializable;
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
+
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.eagleairug.onlinepayment.views.main.HomeUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button;
@@ -18,10 +19,10 @@ public class MainUIController extends HomeUIDesign implements UIControllerInterf
 	 * 
 	 */
 	private static final long serialVersionUID = 7589904000143836097L;
-	private DGeneralUIDesign guid;
+	private DHomeUIDesign guid;
 	
 	
-	public MainUIController(DGeneralUIDesign guid){
+	public MainUIController(DHomeUIDesign guid){
 		init(guid);
 		
 	}
@@ -30,7 +31,7 @@ public class MainUIController extends HomeUIDesign implements UIControllerInterf
 	
 	
 	@Override
-	public void initDefaultUI(DGeneralUIDesign guid){
+	public void initDefaultUI(DHomeUIDesign guid){
 		swap(guid, this);
 	}
 	
@@ -115,13 +116,13 @@ public class MainUIController extends HomeUIDesign implements UIControllerInterf
 
 
 	@Override
-	public DGeneralUIDesign getGeneralUIDesign() {
+	public DHomeUIDesign getGeneralUIDesign() {
 		return this.guid;
 	}
 
 
 	@Override
-	public void setGeneralUIDesign(DGeneralUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIDesign guid) {
 		this.guid = guid;
 		
 	}

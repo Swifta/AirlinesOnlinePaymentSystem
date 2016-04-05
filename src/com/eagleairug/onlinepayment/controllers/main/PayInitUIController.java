@@ -1,6 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.eagleairug.onlinepayment.views.main.PayInitUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
@@ -13,16 +13,16 @@ public class PayInitUIController extends PayInitUIDesign implements UIController
 	 * 
 	 */
 	
-	private DGeneralUIDesign guid;
+	private DHomeUIDesign guid;
 	private static final long serialVersionUID = 5890415980636611688L;
 
-	PayInitUIController(DGeneralUIDesign guid){
+	PayInitUIController(DHomeUIDesign guid){
 		init(guid);
 	}
 	
 	
 	@Override
-	public void initDefaultUI(DGeneralUIDesign guid) {
+	public void initDefaultUI(DHomeUIDesign guid) {
 		guid.replaceComponent(guid.getComponent(1), this);
 		animateProgressBar();
 	}
@@ -45,12 +45,12 @@ public class PayInitUIController extends PayInitUIDesign implements UIController
 	
 
 	@Override
-	public DGeneralUIDesign getGeneralUIDesign() {
+	public DHomeUIDesign getGeneralUIDesign() {
 		return this.guid;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DGeneralUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIDesign guid) {
 		this.guid = guid;
 	}
 	

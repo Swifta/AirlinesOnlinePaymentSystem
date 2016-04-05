@@ -1,6 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.eagleairug.onlinepayment.views.main.PaymentDetailsUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
@@ -14,16 +14,16 @@ public class PaymentDetailsUIController extends PaymentDetailsUIDesign implement
 	 * 
 	 */
 	
-	private DGeneralUIDesign guid;
+	private DHomeUIDesign guid;
 	private static final long serialVersionUID = 5890415980636611688L;
 
-	PaymentDetailsUIController(DGeneralUIDesign guid){
+	PaymentDetailsUIController(DHomeUIDesign guid){
 		init(guid);
 	}
 	
 	
 	@Override
-	public void initDefaultUI(DGeneralUIDesign guid) {
+	public void initDefaultUI(DHomeUIDesign guid) {
 		guid.replaceComponent(guid.getComponent(1), this);
 		
 	}
@@ -87,12 +87,12 @@ public class PaymentDetailsUIController extends PaymentDetailsUIDesign implement
 	
 
 	@Override
-	public DGeneralUIDesign getGeneralUIDesign() {
+	public DHomeUIDesign getGeneralUIDesign() {
 		return this.guid;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DGeneralUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIDesign guid) {
 		this.guid = guid;
 	}
 

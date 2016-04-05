@@ -1,7 +1,7 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
 import com.eagleairug.onlinepayment.views.main.BookingRefenceUIDesign;
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.UI;
@@ -16,17 +16,17 @@ public class BookingReferenceUIController extends BookingRefenceUIDesign impleme
 	private static final long serialVersionUID = 3730661596655826077L;
 	
 	
-	private DGeneralUIDesign guid;
+	private DHomeUIDesign guid;
 	
-	public BookingReferenceUIController(DGeneralUIDesign guid){
-		this.guid = guid;
+	public BookingReferenceUIController(DHomeUIDesign guid){
+		
 		init(guid);
 	}
 
 
 	
 	@Override
-	public void initDefaultUI(DGeneralUIDesign guid) {
+	public void initDefaultUI(DHomeUIDesign guid) {
 		guid.replaceComponent(guid.getComponent(1), this);
 	}
 
@@ -53,7 +53,7 @@ public class BookingReferenceUIController extends BookingRefenceUIDesign impleme
 			@Override
 			public void buttonClick(ClickEvent event) {
 				
-				new MainUIController(guid);
+				new DHomeUIController();
 				UI.getCurrent().getPage().setUriFragment("Home", false);
 				UI.getCurrent().getPage().setTitle("Online Payment | Home");
 				
@@ -78,13 +78,13 @@ public class BookingReferenceUIController extends BookingRefenceUIDesign impleme
 
 	
 	@Override
-	public DGeneralUIDesign getGeneralUIDesign() {
+	public DHomeUIDesign getGeneralUIDesign() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DGeneralUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIDesign guid) {
 		// TODO Auto-generated method stub
 		
 	}

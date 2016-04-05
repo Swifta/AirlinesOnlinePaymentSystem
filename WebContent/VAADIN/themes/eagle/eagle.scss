@@ -341,11 +341,20 @@
     
     .sn-eagle-panel-no-border {
     	border: none;
+    	background-color: #f3f4f8;
     }
     
     .sn-c-pay {
     	background-color: #f3f4f8;
     	position: relative;
+    }
+    
+   
+    
+   
+    
+    .sn-c-pay-opt .v-panel {
+    	background-color: #fff;
     }
     
     .sn-c-pay-opt {
@@ -941,7 +950,13 @@
     	padding-right: 9%;
     	padding-top: 5px;
     	padding-bottom: 28px;
+    	background-colorx: #fff;
     }
+    
+    .sn-inner-cards-c .sn-ad-card {
+    	background-color: #fff;
+    }
+    
     
     .sn-sel-op-logo.sn-ad-icon {
     	background-color: #21348b;
@@ -960,7 +975,7 @@
    
     
     .sn-ad-card {
-    	box-shadow: 1px 2px 10px -8px rgba(0,0,0,05);
+    	box-shadow: 1px 3px 10px -8px rgba(0,0,255,1);
     	margin-left: 0px;
     	margin-right: 80px;
     	
@@ -1185,6 +1200,20 @@
      .sn-dark-red-band {
      		background-colorx: #b30806;
      }
+     
+     .sn-test-replace {
+     		borderx: 43px solid #f00;
+     }
+     
+     .sn-c-message-bandx {
+     	background-color: #b30806;
+     }
+     
+     .sn-c-home-all-whitex {
+     	background-color: #f00;
+     }
+     
+   
      
     
     

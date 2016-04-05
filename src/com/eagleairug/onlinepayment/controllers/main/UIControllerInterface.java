@@ -1,6 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.views.main.DGeneralUIDesign;
+import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Panel;
@@ -8,20 +8,20 @@ import com.vaadin.ui.VerticalLayout;
 
 public interface UIControllerInterface {
 	
-	void initDefaultUI(DGeneralUIDesign guid);
+	void initDefaultUI(DHomeUIDesign guid);
 	void initFooter(Component comp);
 	void attachCommandListener(VaadinRequest request);
-	DGeneralUIDesign getGeneralUIDesign();
-	void setGeneralUIDesign(DGeneralUIDesign guid);
+	DHomeUIDesign getGeneralUIDesign();
+	void setGeneralUIDesign(DHomeUIDesign guid);
 	
-	default void init(DGeneralUIDesign guid) {
+	default void init(DHomeUIDesign guid) {
 		setGeneralUIDesign(guid);
 		initDefaultUI(guid);
 		attachCommandListener(null);
 		
 	}
 	
-	default void swap(DGeneralUIDesign guid, Component cuid){
+	default void swap(DHomeUIDesign guid, Component cuid){
 		Component c =  guid.getComponent(1);
 		Panel p = (Panel)c;
 		VerticalLayout v = (VerticalLayout) p.getContent();
