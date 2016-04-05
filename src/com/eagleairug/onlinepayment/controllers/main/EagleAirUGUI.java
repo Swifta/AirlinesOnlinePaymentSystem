@@ -19,8 +19,8 @@ public class EagleAirUGUI extends UI {
 
 	@Override
 	protected void init(VaadinRequest request) {
-			//new DHomeUIController();
-			UI.getCurrent().setContent(new PanelUIDesign());
+			new DHomeUIController();
+			//UI.getCurrent().setContent(new PanelUIDesign());
 	}
 	
 	
