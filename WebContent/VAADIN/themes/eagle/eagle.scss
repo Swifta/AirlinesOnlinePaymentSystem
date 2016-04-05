@@ -316,15 +316,14 @@
      }
      
      .sn-eagle-white {
-     	background-color: #ffffff;
+     	background-color: #fff;
      	border-bottom: 1px solid rgba(0,0,0,0.1);
      }
     
     .sn-logo-area {
     	position: absolute;
-    	background-color: #ffffff;
     	top: 0;
-		box-shadow: 1px 6px 12px -8px rgba(0,0,0,0.5);
+		
     	
     }
     
@@ -856,7 +855,7 @@
      
      
      .sn-c-pay-help {
-     	border: 1px solid #5168d8;
+     	borderx: 1px solid #5168d8;
      	color: #5168d8;
      	font-weight: bold;
      }
@@ -940,12 +939,12 @@
      .sn-c-ads {
     	padding-left: 9%;
     	padding-right: 9%;
-    	padding-top: 28px;
+    	padding-top: 5px;
     	padding-bottom: 28px;
     }
     
     .sn-sel-op-logo.sn-ad-icon {
-    	background-color: #a0b0ff;
+    	background-color: #21348b;
     }
     
     .sn-c-mm-slogan .sn-ad-desc{
@@ -961,24 +960,25 @@
    
     
     .sn-ad-card {
-    	box-shadow: 1px 3px 16px -8px rgba(0,0,0,1);
-    	margin-left: 7%;
-    	margin-right: 7%;
+    	box-shadow: 1px 2px 10px -8px rgba(0,0,0,05);
+    	margin-left: 0px;
+    	margin-right: 80px;
+    	
     }
     
      
     
    
     
-    .sn-left-ad-card {
-    	margin-left: 0;
+    .sn-left-ad-cardx {
+    	margin-left: 37px;
     	
     	
     }
     
-     .sn-right-ad-card {
-    	margin-right: 0;
-    	float: right;
+     .sn-right-ad-cardx {
+    	margin-right: 37px;
+    	
     	
     }
     
@@ -992,12 +992,49 @@
     	border: none;
     	padding: 0;
     	margin: 0;
+    	background-color: #fff;
     	background: transparent url("img/logo.png") no-repeat scroll center 30%;
     	line-height: 14;
     	color: #e4130a;
     	
+    	
     }
     
+    .sn-logo-c {
+    	background-color: #fff;
+    	box-shadow: 1px 6px 12px -8px rgba(0,0,0,0.5);
+    }
+    
+    .sn-page-location-c .v-label{
+    	position: relative;
+    	margin-right: 23px;
+    	margin-bottom: 7px;
+    	font-size: 11pt;
+    }
+    
+    .sn-online::after {
+    	font-family: FontAwesome;
+    	content: '\f0da';
+    	position: absolute;
+    	top: 0;
+    	right: -25px;
+    	color: #E4E4E4;
+    }
+    
+     .sn-pay-type::after {
+     	font-family: FontAwesome;
+    	content: '\f0da';
+    	position: absolute;
+    	top: 0;
+    	right: -25px;
+    	color: #E4E4E4;
+    }
+    
+    .sn-pay-type-provider {
+    	font-weight: 500;
+    }
+    
+   
     .sn-img-button-link:hover {
     	background: none;
     	box-shadow: none;
@@ -1019,6 +1056,42 @@
     
     
     /*Client Home page [Payment List icons]*/
+    
+    .sn-home-message {
+    	margin-left: 9%;
+    }
+    
+    .sn-c-get-started {
+    	margin-left: 50px;
+    }
+    
+   	.sn-c-get-started .v-button {
+    	
+
+    }
+    
+   .v-button-friendly.sn-btn-get-started {
+	    
+	    color: #EAF4E9;
+	    font-weight: 400;
+	    border-radius: 0px;
+	    border-color: none;
+	   
+	   	border: none;
+	    box-shadow: none;
+	    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+    
+    	border-radius: 0;
+    	border-width: 0;
+    	box-shadow: 0px 1px 0px #1E6B15 inset, 0px -1px 0px #2C9720 inset, 0px 2px 3px rgba(0, 0, 0, 0.05);
+		text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+		font-weight: 400;
+    
+    }
+    
+    .sn-btn-get-started:active {
+    	cursor: wait;
+    }
     
     .sn-mm-btn-icon {
     	border: 1px solid #efefef;
@@ -1070,12 +1143,12 @@
     }
     
     .sn-ad-bank-card {
-    	background: transparent url("img/ad-card.png") no-repeat scroll center center;
+    	background: transparent url("img/ad-card-blue.png") no-repeat scroll center center;
     	
     }
     
     .sn-ad-security {
-    	background: transparent url("img/ad-security.png") no-repeat scroll center center;
+    	background: transparent url("img/ad-security-green.png") no-repeat scroll center center;
     	
     }
     
@@ -1107,6 +1180,12 @@
        		color: #000;
   
        }
+       
+       
+     .sn-dark-red-band {
+     		background-colorx: #b30806;
+     }
+     
     
     
    

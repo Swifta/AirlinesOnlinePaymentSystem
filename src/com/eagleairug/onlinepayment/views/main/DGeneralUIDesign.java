@@ -23,7 +23,11 @@ public class DGeneralUIDesign extends VerticalLayout {
 	protected VerticalLayout logoArea;
 	protected Panel cMidContent;
 	protected VerticalLayout cPay;
-	protected HorizontalLayout cAds;
+	protected VerticalLayout cMessage;
+	protected HorizontalLayout cPayOptHeader;
+	protected VerticalLayout cPayWelcomeMsg;
+	protected VerticalLayout cPayHelp;
+	protected VerticalLayout cAds;
 	protected VerticalLayout cMobileAd;
 	protected HorizontalLayout cMM2;
 	protected VerticalLayout cMMSlogan2;

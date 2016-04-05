@@ -27,6 +27,7 @@ public interface UIControllerInterface {
 		VerticalLayout v = (VerticalLayout) p.getContent();
 		v = (VerticalLayout) v.getComponent(0);
 		v.replaceComponent(v.getComponent(0), cuid);
+		
 	}
 	
 	

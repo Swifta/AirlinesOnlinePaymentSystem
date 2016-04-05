@@ -13397,15 +13397,13 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-eagle-white {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .eagle .sn-logo-area {
 	position: absolute;
-	background-color: #ffffff;
 	top: 0;
-	box-shadow: 1px 6px 12px -8px rgba(0, 0, 0, 0.5);
 }
 
 .eagle .sn-side-page-margin {
@@ -13748,7 +13746,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-c-pay-help {
-	border: 1px solid #5168d8;
+	borderx: 1px solid #5168d8;
 	color: #5168d8;
 	font-weight: bold;
 }
@@ -13786,12 +13784,12 @@ div.v-layout.v-horizontal.v-widget {
 .eagle .sn-c-ads {
 	padding-left: 9%;
 	padding-right: 9%;
-	padding-top: 28px;
+	padding-top: 5px;
 	padding-bottom: 28px;
 }
 
 .eagle .sn-sel-op-logo.sn-ad-icon {
-	background-color: #a0b0ff;
+	background-color: #21348b;
 }
 
 .eagle .sn-c-mm-slogan .sn-ad-desc {
@@ -13805,18 +13803,17 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-ad-card {
-	box-shadow: 1px 3px 16px -8px black;
-	margin-left: 7%;
-	margin-right: 7%;
+	box-shadow: 1px 2px 10px -8px rgba(0, 0, 0, 5);
+	margin-left: 0px;
+	margin-right: 80px;
 }
 
-.eagle .sn-left-ad-card {
-	margin-left: 0;
+.eagle .sn-left-ad-cardx {
+	margin-left: 37px;
 }
 
-.eagle .sn-right-ad-card {
-	margin-right: 0;
-	float: right;
+.eagle .sn-right-ad-cardx {
+	margin-right: 37px;
 }
 
 .eagle .sn-img-button-link {
@@ -13826,9 +13823,44 @@ div.v-layout.v-horizontal.v-widget {
 	border: none;
 	padding: 0;
 	margin: 0;
+	background-color: #fff;
 	background: transparent url("img/logo.png") no-repeat scroll center 30%;
 	line-height: 14;
 	color: #e4130a;
+}
+
+.eagle .sn-logo-c {
+	background-color: #fff;
+	box-shadow: 1px 6px 12px -8px rgba(0, 0, 0, 0.5);
+}
+
+.eagle .sn-page-location-c .v-label {
+	position: relative;
+	margin-right: 23px;
+	margin-bottom: 7px;
+	font-size: 11pt;
+}
+
+.eagle .sn-online::after {
+	font-family: FontAwesome;
+	content: "\f0da";
+	position: absolute;
+	top: 0;
+	right: -25px;
+	color: #E4E4E4;
+}
+
+.eagle .sn-pay-type::after {
+	font-family: FontAwesome;
+	content: "\f0da";
+	position: absolute;
+	top: 0;
+	right: -25px;
+	color: #E4E4E4;
+}
+
+.eagle .sn-pay-type-provider {
+	font-weight: 500;
 }
 
 .eagle .sn-img-button-link:hover {
@@ -13841,6 +13873,33 @@ div.v-layout.v-horizontal.v-widget {
 	background: transparent url("img/logo.png") no-repeat scroll center 30%;
 	color: #e4130a;
 	line-height: 14;
+}
+
+.eagle .sn-home-message {
+	margin-left: 9%;
+}
+
+.eagle .sn-c-get-started {
+	margin-left: 50px;
+}
+
+.eagle .v-button-friendly.sn-btn-get-started {
+	color: #EAF4E9;
+	font-weight: 400;
+	border-radius: 0px;
+	border-color: none;
+	border: none;
+	box-shadow: none;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+	border-radius: 0;
+	border-width: 0;
+	box-shadow: 0px 1px 0px #1E6B15 inset, 0px -1px 0px #2C9720 inset, 0px 2px 3px rgba(0, 0, 0, 0.05);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.05);
+	font-weight: 400;
+}
+
+.eagle .sn-btn-get-started:active {
+	cursor: wait;
 }
 
 .eagle .sn-mm-btn-icon {
@@ -13883,11 +13942,11 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-ad-bank-card {
-	background: transparent url("img/ad-card.png") no-repeat scroll center center;
+	background: transparent url("img/ad-card-blue.png") no-repeat scroll center center;
 }
 
 .eagle .sn-ad-security {
-	background: transparent url("img/ad-security.png") no-repeat scroll center center;
+	background: transparent url("img/ad-security-green.png") no-repeat scroll center center;
 }
 
 .eagle .sn-c-pointer {
@@ -13905,4 +13964,8 @@ div.v-layout.v-horizontal.v-widget {
 .eagle .sn-panel-head-smaller {
 	font-size: 7px;
 	color: #000;
+}
+
+.eagle .sn-dark-red-band {
+	background-colorx: #b30806;
 }
