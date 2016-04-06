@@ -664,7 +664,7 @@
        		text-align: center;
        }
        
-       .sn-c-form .v-textfield {
+       .sn-c-form .v-textfield, .sn-c-form .v-filterselect {
        		color: #9292f5;
        		border-radius: 0;
        }
@@ -1325,7 +1325,7 @@
        
     .sn-ad-card.sn-left-ad-card.sn-login {
        		
-       	box-shadow: 1px 1px 1px rgba(255,255,255, 1);
+       	//box-shadow: 1px 1px 1px rgba(255,255,255, 1);
        	
        	margin: 0;
        
@@ -1333,8 +1333,9 @@
     }
     
     .sn-c-ref-form.sn-login {
-       		border-left: 4px solid #fff;
-       		border-top: 1px solid #fff;
+       		border: 8px solid #fff;
+       		border-radius: 0px 0px 3px 3px;
+       		
        		
        		
      }
@@ -1342,6 +1343,7 @@
      .sn-c-form.sn-login .sn-login-message {
      	background-color: #fff;
      	margin-bottom: 20px;
+     	border-radius: 0;
      }
      
      .sn-cbd-head.sn-ref.sn-login .v-label {
@@ -1377,6 +1379,12 @@
     .sn-login-welcome {
     	padding: 10px 10px 0 10px;
     }
+    
+    .sn-eagle-white.sn-login {
+    	background-color: #fff;
+    }
+    
+   
     
     
     
