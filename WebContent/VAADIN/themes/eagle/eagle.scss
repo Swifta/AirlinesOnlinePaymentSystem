@@ -664,9 +664,13 @@
        		text-align: center;
        }
        
-       .sn-c-form .v-icon, .sn-c-form .v-textfield {
+       .sn-c-form .v-textfield {
        		color: #9292f5;
        		border-radius: 0;
+       }
+       
+       .sn-c-form .v-icon {
+       		color: #fff;
        }
        
        .sn-c-form .v-button {
@@ -1221,6 +1225,12 @@
      		font-weight: 600;
      }
      
+     .sn-sys-name-small:hover {
+     	font-size: 10pt;
+     	line-height: 18;
+     	font-weight: 600;
+     }
+     
     .sn-side-page-margin.sn-ref {
     	margin-left: 0;
     }
@@ -1297,6 +1307,66 @@
     .sn-c-booking-details.sn-ref {
     	background-color: #f3f4f8;
     }
+    
+    
+    
+    
+    /******* Login Page  Styles *********/
+    
+     .sn-eagle-panel-no-border.sn-login {
+    	border: none;
+    	background-color: #21348b;
+    	margin-top: -2px;
+    }
+    
+    .sn-c-form.sn-login {
+       	background-color: #f3f4f8;
+    }
+       
+    .sn-ad-card.sn-left-ad-card.sn-login {
+       		
+       	box-shadow: 1px 1px 1px rgba(255,255,255, 1);
+       	
+       	margin: 0;
+       
+    	
+    }
+    
+    .sn-c-ref-form.sn-login {
+       		border-left: 4px solid #fff;
+       		border-top: 1px solid #fff;
+       		
+       		
+     }
+     
+     .sn-c-form.sn-login .sn-login-message {
+     	background-color: #fff;
+     }
+     
+     .sn-cbd-head.sn-ref.sn-login .v-label {
+     	font-weight: 100;
+     }
+     
+     .sn-eagle-white.sn-login {
+     	background-color: #fff;
+     }
+     
+    
+    
+    .sn-home-message.sn-login {
+    	margin: 0;
+    	padding: 0;
+    }
+    
+    .sn-cbd-head.sn-ref.sn-login {
+    	margin-left: 10px;
+    }
+    
+    .sn-eagle-white.sn-login {
+    	border-bottom: none;
+    }
+    
+    
     
     
     
