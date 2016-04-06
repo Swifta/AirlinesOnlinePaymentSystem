@@ -26,7 +26,6 @@ public class DLoginUIDesign extends VerticalLayout {
 	protected VerticalLayout cMobileAd;
 	protected VerticalLayout cForm;
 	protected VerticalLayout cBookingDetails3;
-	protected HorizontalLayout cBDHead3;
 	protected HorizontalLayout cControls;
 	protected Button btnLogin;
 	protected VerticalLayout cFooter;

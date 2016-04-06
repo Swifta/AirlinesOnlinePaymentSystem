@@ -1341,10 +1341,12 @@
      
      .sn-c-form.sn-login .sn-login-message {
      	background-color: #fff;
+     	margin-bottom: 20px;
      }
      
      .sn-cbd-head.sn-ref.sn-login .v-label {
      	font-weight: 100;
+     	padding-right: 5px;
      }
      
      .sn-eagle-white.sn-login {
@@ -1359,11 +1361,21 @@
     }
     
     .sn-cbd-head.sn-ref.sn-login {
-    	margin-left: 10px;
+    	margin-left: 0px;
     }
     
     .sn-eagle-white.sn-login {
     	border-bottom: none;
+    }
+    
+    .sn-login-instru.v-label {
+    	font-size: 10.5pt;
+    	line-height: 1;
+    	padding: 10px;
+    }
+    
+    .sn-login-welcome {
+    	padding: 10px 10px 0 10px;
     }
     
     
