@@ -1,6 +1,9 @@
 # AirlinesOnlinePaymentSystem
 All Airlines Payment Portal, taking Eagle air Uganda as the pilot airline.
 
+###Core Programming Languages
+1. Java
+
 ###UI Development Technologies
 1. Vaadin
 
