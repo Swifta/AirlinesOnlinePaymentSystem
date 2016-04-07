@@ -24,9 +24,10 @@ public class DManagementUIDesign extends VerticalLayout {
 	protected VerticalLayout cHeader;
 	protected VerticalLayout userIdentity;
 	protected HorizontalLayout usernameMore;
-	protected Label username;
+	protected Label lbUsername;
 	protected Button userOps;
 	protected VerticalLayout moreDropDown;
+	protected Button btnLogout;
 	protected VerticalLayout logoArea;
 	protected VerticalLayout midContent;
 	protected Panel leftBar;

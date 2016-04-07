@@ -16,20 +16,14 @@ public class DLoginUIController extends DLoginUIDesign implements UIController {
 	
 	
 
-	DLoginUIController(VaadinRequest request){
+	public DLoginUIController(VaadinRequest request){
 		init(null);
 	}
 	
-	@Override
-	public void init(DHomeUIController guid){
-		UI.getCurrent().setContent(this);
-		attachCommandListener(null);
-		
-	}
 	
 	@Override
 	public void initDefaultUI(DHomeUIController guid) {
-		
+		UI.getCurrent().setContent(this);
 	}
 
 	@Override
@@ -57,9 +51,21 @@ public class DLoginUIController extends DLoginUIDesign implements UIController {
 			public void buttonClick(ClickEvent event) {
 				String sUsername = fUsername.getValue();
 				String sPassword = fPassword.getValue();
-				if(sUsername != null && sPassword != null && !sUsername.isEmpty()){	
-					new DManagementUIController();
-				}
+				
+				if(sUsername.equals(null) || sPassword.equals(null))	
+					return;
+				
+				
+				sUsername = sUsername.trim();
+				sPassword = sPassword.trim();
+				
+				if(sUsername.isEmpty() || sPassword.isEmpty())
+					return;
+				
+				
+				UI.getCurrent().getSession().setAttribute("username", sUsername);
+				new DManagementUIController();
+				
 				
 			}
 			

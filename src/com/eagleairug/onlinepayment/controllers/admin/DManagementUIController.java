@@ -1,5 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.admin;
 
+import com.eagleairug.onlinepayment.controllers.main.DLoginUIController;
 import com.eagleairug.onlinepayment.views.admin.DManagementUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
@@ -20,6 +21,11 @@ public class DManagementUIController extends DManagementUIDesign implements UICo
 	
 	@Override
 	public void initDefaultUI(DManagementUIController guid) {
+		Object oUser = UI.getCurrent().getSession().getAttribute("username");
+		if(oUser == null || oUser.toString().isEmpty())
+			return;
+		
+		this.lbUsername.setValue(oUser+"");
 		swap(guid, new DDashboardUIController(guid));
 		UI.getCurrent().setContent(guid);
 	}
@@ -36,7 +42,29 @@ public class DManagementUIController extends DManagementUIDesign implements UICo
 		attachNewUser();
 		attachUsers();
 		attachReports();
+		attachLogout();
 		
+		
+		
+	}
+	
+	private void attachLogout(){
+		this.btnLogout.addClickListener(new ClickListener(){
+
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = -7731164586803534336L;
+
+			@Override
+			public void buttonClick(ClickEvent event) {
+				
+				UI.getCurrent().getSession().close();
+				UI.getCurrent().getPage().reload();
+				
+			}
+			
+		});
 	}
 	
 	private void attachDashboard(){
