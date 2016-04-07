@@ -20,7 +20,12 @@ http://localhost:8080/EagleAir/?p=client
 ###Management UI Testing
 http://localhost:8080/EagleAir/?p=admin
 
-**Note:** Tested on Apache tomcat instance, however in java Web Container should work fine. On the url, I assumed  *EagleAir* Context root... u can modify the context root as you wish.
+###User Managemet test Login Credentials
+1. Username - anything [ Only whitespace characters not allowed ]
+2. Password - anything [ Only whitespace characters not allowed ]
+
+**Note:** Tested on Apache tomcat instance, however any java Web Container like JBoss and Glassfish should work fine. About the above test urls, the default context root is  *EagleAir*... u can modify the context root and test urls as you wish.
+
 
 
 
