@@ -20,7 +20,7 @@ http://localhost:8080/EagleAir/?p=client
 ###Management UI Testing
 http://localhost:8080/EagleAir/?p=admin
 
-**Note:** Assuming deployed on a apache tomcat instance for testing and *EagleAir* Context root.
+**Note:** Tested on Apache tomcat instance, however in java Web Container should work fine. On the url, I assumed  *EagleAir* Context root... u can modify the context root as you wish.
 
 
 
