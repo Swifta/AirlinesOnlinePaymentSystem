@@ -14,13 +14,13 @@ All Airlines Payment Portal, taking Eagle air Uganda as the pilot airline.
 1. WSO2 DSS
 2. SOAP
 3. Apache AXIS Webservices engine
-###How to test
-####Client UI
+
+###Client UI Testing
 http://localhost:8080/EagleAir/?p=client
-####Management UI
+###Management UI Testing
 http://localhost:8080/EagleAir/?p=admin
 
-**Note:** Assuming deployed on a apache tomcat instance for testing.
+**Note:** Assuming deployed on a apache tomcat instance for testing and *EagleAir* Context root.
 
 
 
