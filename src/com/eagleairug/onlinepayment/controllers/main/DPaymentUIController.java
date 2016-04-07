@@ -1,6 +1,5 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
 import com.eagleairug.onlinepayment.views.main.DPaymentUIDesign;
 import com.vaadin.event.LayoutEvents.LayoutClickEvent;
 import com.vaadin.event.LayoutEvents.LayoutClickListener;
@@ -12,10 +11,10 @@ public class DPaymentUIController extends DPaymentUIDesign implements UIControll
 
 	
 	private static final long serialVersionUID = 7589904000143836097L;
-	private DHomeUIDesign guid;
+	private DHomeUIController guid;
 	
 	
-	public DPaymentUIController(DHomeUIDesign guid){
+	public DPaymentUIController(DHomeUIController guid){
 		init(guid);
 		
 	}
@@ -24,7 +23,7 @@ public class DPaymentUIController extends DPaymentUIDesign implements UIControll
 	
 	
 	@Override
-	public void initDefaultUI(DHomeUIDesign guid){
+	public void initDefaultUI(DHomeUIController guid){
 		swap(guid, this);
 	}
 	
@@ -65,13 +64,13 @@ public class DPaymentUIController extends DPaymentUIDesign implements UIControll
 	
 
 	@Override
-	public DHomeUIDesign getGeneralUIDesign() {
+	public DHomeUIController getGeneralUIDesign() {
 		
 		return this.guid;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DHomeUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIController guid) {
 		
 		this.guid = guid;
 		

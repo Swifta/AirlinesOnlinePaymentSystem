@@ -18,9 +18,18 @@ public class EagleAirUGUI extends UI {
 
 	@Override
 	protected void init(VaadinRequest request) {
-			new DLoginUIController();
-			//UI.getCurrent().setContent(new PanelUIDesign());
+		String p = request.getParameter("p");
+		if(p != null)
+			if(p.equals("admin")){
+				new DLoginUIController(request);
+				return;
+			}
+			new DHomeUIController();
+			
 	}
+	
+	
+
 	
 	
 

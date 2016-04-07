@@ -1,9 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
-import com.eagleairug.onlinepayment.controllers.accounting.DAccountingDashboardUIController;
-import com.eagleairug.onlinepayment.controllers.admin.DAdminDashboardUIController;
-import com.eagleairug.onlinepayment.controllers.agent.DAgentDashboardUIController;
-import com.eagleairug.onlinepayment.views.main.DHomeUIDesign;
+import com.eagleairug.onlinepayment.controllers.admin.DManagementUIController;
 import com.eagleairug.onlinepayment.views.main.DLoginUIDesign;
 import com.vaadin.event.ShortcutAction.KeyCode;
 import com.vaadin.server.VaadinRequest;
@@ -14,25 +11,24 @@ import com.vaadin.ui.UI;
 
 public class DLoginUIController extends DLoginUIDesign implements UIController {
 
-	/**
-	 * 
-	 */
 	
 	private static final long serialVersionUID = -3610153824639476015L;
 	
+	
 
-	DLoginUIController(){
+	DLoginUIController(VaadinRequest request){
 		init(null);
 	}
 	
 	@Override
-	public void init(DHomeUIDesign guid){
+	public void init(DHomeUIController guid){
 		UI.getCurrent().setContent(this);
 		attachCommandListener(null);
+		
 	}
 	
 	@Override
-	public void initDefaultUI(DHomeUIDesign guid) {
+	public void initDefaultUI(DHomeUIController guid) {
 		
 	}
 
@@ -49,29 +45,21 @@ public class DLoginUIController extends DLoginUIDesign implements UIController {
 	}
 	
 	private void attachLogin(){
-		String sUsername = this.fUsername.getValue();
-		String sPassword = this.fPassword.getValue();
-		
-		System.out.println("----------- "+sUsername+" --------------");
 		
 		this.btnLogin.setClickShortcut(KeyCode.ENTER, null);
+		
+		
 		this.btnLogin.addClickListener(new ClickListener(){
-			private static final long serialVersionUID = 1L;
-
+			
+			private static final long serialVersionUID = -8066548934073593566L;
+			
 			@Override
 			public void buttonClick(ClickEvent event) {
-				if(sUsername != null & sPassword != null){
-					
-					if(sUsername.equals("admin"))
-						new DAdminDashboardUIController();
-					if(sUsername.equals("accountant"))
-						new DAccountingDashboardUIController();
-					if(sUsername.equals("agent"))
-						new DAgentDashboardUIController();
-					
+				String sUsername = fUsername.getValue();
+				String sPassword = fPassword.getValue();
+				if(sUsername != null && sPassword != null && !sUsername.isEmpty()){	
+					new DManagementUIController();
 				}
-				
-				//new DHomeUIController();
 				
 			}
 			
@@ -81,13 +69,12 @@ public class DLoginUIController extends DLoginUIDesign implements UIController {
 	
 
 	@Override
-	public DHomeUIDesign getGeneralUIDesign() {
-		
+	public DHomeUIController getGeneralUIDesign() {
 		return null;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DHomeUIDesign guid) {
+	public void setGeneralUIDesign(DHomeUIController guid) {
 		
 		
 		

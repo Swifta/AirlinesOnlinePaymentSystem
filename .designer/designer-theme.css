@@ -14130,3 +14130,8 @@ div.v-layout.v-horizontal.v-widget {
 .eagle .sn-eagle-white.sn-login {
 	background-color: #fff;
 }
+
+.eagle .v-window-header {
+	color: #5168D8;
+	font-weight: bolder;
+}

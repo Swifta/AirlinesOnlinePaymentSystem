@@ -14,23 +14,15 @@ public class DHomeUIController  extends DHomeUIDesign implements UIController {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private DHomeUIDesign guid;
+	private DHomeUIController guid;
 
 	DHomeUIController(){
-		 init(null);
+		 init(this);
 	}
 	
-	@Override 
-	public void init(DHomeUIDesign guid){
-		UI.getCurrent().setContent(this);
-		this.guid = this;
-		attachCommandListener(null);
-		
-	}
 	@Override
-	public void initDefaultUI(DHomeUIDesign guid) {
-		// TODO Auto-generated method stub
-		
+	public void initDefaultUI(DHomeUIController guid) {
+		UI.getCurrent().setContent(guid);
 	}
 
 	@Override
@@ -61,13 +53,13 @@ public class DHomeUIController  extends DHomeUIDesign implements UIController {
 	}
 
 	@Override
-	public DHomeUIDesign getGeneralUIDesign() {
+	public DHomeUIController getGeneralUIDesign() {
 		return guid;
 	}
 
 	@Override
-	public void setGeneralUIDesign(DHomeUIDesign guid) {
-		
+	public void setGeneralUIDesign(DHomeUIController guid) {
+		this.guid = guid;
 	}
 
 }
