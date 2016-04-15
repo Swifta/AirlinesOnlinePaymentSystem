@@ -1,6 +1,7 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
 import com.eagleairug.onlinepayment.controllers.admin.DManagementUIController;
+import com.eagleairug.onlinepayment.models.main.MLogin;
 import com.eagleairug.onlinepayment.views.main.DLoginUIDesign;
 import com.vaadin.event.ShortcutAction.KeyCode;
 import com.vaadin.server.VaadinRequest;
@@ -62,9 +63,14 @@ public class DLoginUIController extends DLoginUIDesign implements UIController {
 				if(sUsername.isEmpty() || sPassword.isEmpty())
 					return;
 				
+				MLogin mLogin = new MLogin();
+				
+				if(!mLogin.login(sUsername, sPassword))
+					return;
 				
 				UI.getCurrent().getSession().setAttribute("username", sUsername);
 				new DManagementUIController();
+				
 				
 				
 			}

@@ -1,0 +1,202 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns0="http://ws.wso2.org/dataservice" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ws.wso2.org/dataservice">
+    <wsdl:documentation></wsdl:documentation>
+    <wsdl:types>
+        <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ws.wso2.org/dataservice">
+            <xs:element name="DataServiceFault" type="xs:string"></xs:element>
+            <xs:element name="REQUEST_STATUS" type="xs:string"></xs:element>
+            <xs:element name="DATA_SERVICE_RESPONSE">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:any minOccurs="0"></xs:any>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="validbookingid">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ibookingrefid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="imsisdn" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ostatus" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="oconvamount" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="orealamount" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="obookingrefid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ostatusmessage" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ofxrate" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="oclientname" nillable="true" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="validbookingresponses" type="ns0:validbookingresponses"></xs:element>
+            <xs:complexType name="validbookingresponses">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="validbookingresponse" type="ns0:validbookingresponse"></xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="validbookingresponse">
+                <xs:sequence>
+                    <xs:element name="status" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="convamount" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="realamount" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="bookingrefid" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="statusmessage" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="fxrate" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="clientname" nillable="true" type="xs:string"></xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="persittransactionrecord">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ipartnertxnid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="iratetxnid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="iamount" nillable="true" type="xs:double"></xs:element>
+                        <xs:element name="ibookingrefid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="imsisdn" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ipartnerstatusid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="otrxnid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="opartnertxnid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ostatusid" nillable="true" type="xs:string"></xs:element>
+                        <xs:element name="ostatusmessage" nillable="true" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="persittransactionrecordresponses" type="ns0:persittransactionrecordresponses"></xs:element>
+            <xs:complexType name="persittransactionrecordresponses">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="persittransactionrecordresponse" type="ns0:persittransactionrecordresponse"></xs:element>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="persittransactionrecordresponse">
+                <xs:sequence>
+                    <xs:element name="trxnid" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="partnertxnid" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="statusid" nillable="true" type="xs:string"></xs:element>
+                    <xs:element name="statusmessage" nillable="true" type="xs:string"></xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="validbookingidRequest">
+        <wsdl:part name="parameters" element="ns0:validbookingid"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="validbookingidResponse">
+        <wsdl:part name="parameters" element="ns0:validbookingresponses"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="DataServiceFault">
+        <wsdl:part name="parameters" element="ns0:DataServiceFault"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="persittransactionrecordRequest">
+        <wsdl:part name="parameters" element="ns0:persittransactionrecord"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="persittransactionrecordResponse">
+        <wsdl:part name="parameters" element="ns0:persittransactionrecordresponses"></wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="hyperswiftPortType">
+        <wsdl:operation name="validbookingid">
+            <wsdl:documentation></wsdl:documentation>
+            <wsdl:input message="ns0:validbookingidRequest" wsaw:Action="urn:validbookingid"></wsdl:input>
+            <wsdl:output message="ns0:validbookingidResponse" wsaw:Action="urn:validbookingidResponse"></wsdl:output>
+            <wsdl:fault message="ns0:DataServiceFault" name="DataServiceFault" wsaw:Action="urn:validbookingidDataServiceFault"></wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="persittransactionrecord">
+            <wsdl:documentation></wsdl:documentation>
+            <wsdl:input message="ns0:persittransactionrecordRequest" wsaw:Action="urn:persittransactionrecord"></wsdl:input>
+            <wsdl:output message="ns0:persittransactionrecordResponse" wsaw:Action="urn:persittransactionrecordResponse"></wsdl:output>
+            <wsdl:fault message="ns0:DataServiceFault" name="DataServiceFault" wsaw:Action="urn:persittransactionrecordDataServiceFault"></wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="hyperswiftSOAP11Binding" type="ns0:hyperswiftPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap:binding>
+        <wsdl:operation name="validbookingid">
+            <soap:operation soapAction="urn:validbookingid" style="document"></soap:operation>
+            <wsdl:input>
+                <soap:body use="literal"></soap:body>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"></soap:body>
+            </wsdl:output>
+            <wsdl:fault name="DataServiceFault">
+                <soap:fault use="literal" name="DataServiceFault"></soap:fault>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="persittransactionrecord">
+            <soap:operation soapAction="urn:persittransactionrecord" style="document"></soap:operation>
+            <wsdl:input>
+                <soap:body use="literal"></soap:body>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"></soap:body>
+            </wsdl:output>
+            <wsdl:fault name="DataServiceFault">
+                <soap:fault use="literal" name="DataServiceFault"></soap:fault>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="hyperswiftSOAP12Binding" type="ns0:hyperswiftPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"></soap12:binding>
+        <wsdl:operation name="validbookingid">
+            <soap12:operation soapAction="urn:validbookingid" style="document"></soap12:operation>
+            <wsdl:input>
+                <soap12:body use="literal"></soap12:body>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"></soap12:body>
+            </wsdl:output>
+            <wsdl:fault name="DataServiceFault">
+                <soap12:fault use="literal" name="DataServiceFault"></soap12:fault>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="persittransactionrecord">
+            <soap12:operation soapAction="urn:persittransactionrecord" style="document"></soap12:operation>
+            <wsdl:input>
+                <soap12:body use="literal"></soap12:body>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"></soap12:body>
+            </wsdl:output>
+            <wsdl:fault name="DataServiceFault">
+                <soap12:fault use="literal" name="DataServiceFault"></soap12:fault>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="hyperswiftHttpBinding" type="ns0:hyperswiftPortType">
+        <http:binding verb="POST"></http:binding>
+        <wsdl:operation name="validbookingid">
+            <http:operation location="validbookingid"></http:operation>
+            <wsdl:input>
+                <mime:content type="text/xml" part="parameters"></mime:content>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="parameters"></mime:content>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="persittransactionrecord">
+            <http:operation location="persittransactionrecord"></http:operation>
+            <wsdl:input>
+                <mime:content type="text/xml" part="parameters"></mime:content>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="text/xml" part="parameters"></mime:content>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="hyperswift">
+        <wsdl:port name="SOAP11Endpoint" binding="ns0:hyperswiftSOAP11Binding">
+            <soap:address location="http://54.209.8.132:9764/services/hyperswift.SOAP11Endpoint/"></soap:address>
+        </wsdl:port>
+        <wsdl:port name="SecureSOAP11Endpoint" binding="ns0:hyperswiftSOAP11Binding">
+            <soap:address location="https://54.209.8.132:9444/services/hyperswift.SecureSOAP11Endpoint/"></soap:address>
+        </wsdl:port>
+        <wsdl:port name="SecureSOAP12Endpoint" binding="ns0:hyperswiftSOAP12Binding">
+            <soap12:address location="https://54.209.8.132:9444/services/hyperswift.SecureSOAP12Endpoint/"></soap12:address>
+        </wsdl:port>
+        <wsdl:port name="SOAP12Endpoint" binding="ns0:hyperswiftSOAP12Binding">
+            <soap12:address location="http://54.209.8.132:9764/services/hyperswift.SOAP12Endpoint/"></soap12:address>
+        </wsdl:port>
+        <wsdl:port name="HTTPEndpoint" binding="ns0:hyperswiftHttpBinding">
+            <http:address location="http://54.209.8.132:9764/services/hyperswift.HTTPEndpoint/"></http:address>
+        </wsdl:port>
+        <wsdl:port name="SecureHTTPEndpoint" binding="ns0:hyperswiftHttpBinding">
+            <http:address location="https://54.209.8.132:9444/services/hyperswift.SecureHTTPEndpoint/"></http:address>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
