@@ -1,6 +1,13 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 import com.eagleairug.onlinepayment.views.main.DDetailsUIDesign;
+import com.eagleairug.onlinepayment.ws.ds.DSOnlineAirlinePaymentStub.Details;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Button.ClickListener;
@@ -13,14 +20,15 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 	private static final long serialVersionUID = -8262218659427298935L;
 	private DHomeUIController guid;
 	
-	DDetailsUIController(DHomeUIController guid){
+	DDetailsUIController(DHomeUIController guid, Details details){
 		init(guid);
+		setDetails(details);
 	}
 
 	@Override
 	public void initDefaultUI(DHomeUIController guid) {
-		
 		swap(guid, this);
+		
 		
 	}
 
@@ -111,5 +119,23 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 	public void setGeneralUIDesign(DHomeUIController guid) {
 		this.guid = guid;
 		
+	}
+	
+	private void setDetails(Details details){
+		NumberFormat fm = NumberFormat.getCurrencyInstance(Locale.US);
+		
+		this.lbName.setValue(details.getClient_name());
+		this.lbBookingRef.setValue(details.getBooking_ref());
+		this.lbCostUSD.setValue(fm.format(BigDecimal.valueOf(Double.valueOf(details.getCost()))));
+		
+		DecimalFormat dfm = (DecimalFormat) fm;
+		DecimalFormatSymbols dfms = dfm.getDecimalFormatSymbols();
+		dfms.setCurrencySymbol("");
+		dfm.setDecimalFormatSymbols(dfms);
+		
+		this.lbRate.setValue(dfm.format(BigDecimal.valueOf(Double.valueOf(details.getRate()))));
+		this.lbCostUGX.setValue(dfm.format(BigDecimal.valueOf(Double.parseDouble(details.getCost())*Double.parseDouble(details.getRate()))));
+		UI.getCurrent().getSession().setAttribute("rate_id", details.getRate_id());
+	
 	}
 }

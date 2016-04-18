@@ -13643,10 +13643,11 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-c-ref-form.sn-c-booking-details {
-	border-left: 4px solid #cacaca;
+	border-left: none;
 	background-color: #fff;
-	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-	border-top: 1px solid rgba(0, 0, 0, 0.05);
+	box-shadowx: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	border-topx: 1px solid rgba(0, 0, 0, 0.05);
+	border-bottom: none;
 }
 
 .eagle .sn-c-ref-form.sn-c-booking-details.sn-no-border-left {
@@ -13654,6 +13655,10 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .eagle .sn-cbd-head {
+	border-bottomx: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.eagle .sn-cbd-head .sn-label-underline {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 

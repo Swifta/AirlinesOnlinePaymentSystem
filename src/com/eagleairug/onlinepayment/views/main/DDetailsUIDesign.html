@@ -97,22 +97,28 @@
        </vaadin-label> 
       </vaadin-horizontal-layout> 
       <vaadin-panel style-name="sn-mm-panel sn-mm-right-c-panel" _id="mmPanel2" :expand=""> 
-       <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-right-panel-v" spacing="true" margin-top="true" margin-bottom="true"> 
+       <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-c-right-panel-v" margin-top="true"> 
         <vaadin-vertical-layout primary-style-name="v-verticallayout" style-name="sn-c-ref-form sn-c-form sn-c-booking-details" size-auto="true" _id="cBookingDetails" :center=""> 
          <vaadin-horizontal-layout primary-style-name="v-horizontallayout" style-name="sn-cbd-head" margin-left="true" margin-right="true" _id="cBDHead"> 
-          <vaadin-label style-name="bold" width="442px" plain-text="">
+          <vaadin-label style-name="bold sn-label-underline" width="329px" plain-text="">
             Booking Details 
           </vaadin-label> 
          </vaadin-horizontal-layout> 
          <vaadin-horizontal-layout primary-style-name="v-horizontallayout" margin-left="true" margin-right="true" _id="cBDBody"> 
           <vaadin-form-layout spacing="false" size-auto="true" margin-top="false" margin-bottom="false"> 
-           <vaadin-label caption="Name" style-name="small" size-auto="true" plain-text="">
+           <vaadin-label caption="Name" style-name="small" size-auto="true" plain-text="" _id="lbName">
              Paul Kigozi 
            </vaadin-label> 
-           <vaadin-label caption="Booking Ref" style-name="small" size-auto="true" plain-text="">
+           <vaadin-label caption="Booking Ref" style-name="small" size-auto="true" plain-text="" _id="lbBookingRef">
              BO SM 0403 001 
            </vaadin-label> 
-           <vaadin-label caption="Flight Cost (USD)" style-name="small" size-auto="true" plain-text="">
+           <vaadin-label caption="Flight Cost (USD)" style-name="small" size-auto="true" plain-text="" _id="lbCostUSD">
+             400.00 
+           </vaadin-label> 
+           <vaadin-label caption="Ex. Rate" style-name="small" size-auto="true" plain-text="" _id="lbRate">
+             400.00 
+           </vaadin-label> 
+           <vaadin-label caption="Converted Cost (UGX)" style-name="small" size-auto="true" plain-text="" _id="lbCostUGX">
              400.00 
            </vaadin-label> 
           </vaadin-form-layout> 
@@ -135,7 +141,7 @@
           </vaadin-button> 
          </vaadin-horizontal-layout> 
         </vaadin-vertical-layout> 
-       </vaadin-vertical-layout> 
+       </vaadin-horizontal-layout> 
       </vaadin-panel> 
      </vaadin-vertical-layout> 
     </vaadin-horizontal-layout> 

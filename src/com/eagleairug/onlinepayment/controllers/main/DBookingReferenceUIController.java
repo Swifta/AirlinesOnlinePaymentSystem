@@ -1,5 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.main;
 
+import com.eagleairug.onlinepayment.models.main.MBookingRef;
 import com.eagleairug.onlinepayment.views.main.DBookingReferenceUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
@@ -64,8 +65,23 @@ public class DBookingReferenceUIController extends DBookingReferenceUIDesign imp
 
 			@Override
 			public void buttonClick(ClickEvent event) {
+				String bookingRef = fBookingRef.getValue();
+				/*TODO
+				 * Extra client side validation of the booking reference required.
+				 */
+				if(bookingRef == null)
+					return;
 				
-				new DDetailsUIController(guid);
+				bookingRef = bookingRef.trim();
+				if(bookingRef.isEmpty())
+					return;
+				
+				if(MBookingRef.validateBookingRef(bookingRef) == null){
+					System.err.println("Invalid booking ref. No data returned.");
+					return;
+				}
+				
+				new DDetailsUIController(guid, MBookingRef.validateBookingRef(bookingRef));
 				System.out.println("Ref's next is fine.");
 				
 			}

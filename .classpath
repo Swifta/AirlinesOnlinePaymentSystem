@@ -27,7 +27,6 @@
 	<classpathentry kind="lib" path="E:/jokoni/Vaadin/add-ons/animation/animator-2.0.0.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/axis2-1.6.1-wso2v14.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/axiom-api-1.2.11-wso2v6.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/AirlinesOnlinePaymentAxis2Client-0.0.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/neethi-2.0.4.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/wsdl4j-1.6.2.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/XmlSchema-1.4.7.jar"/>
@@ -41,7 +40,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/woden-api-1.0M9.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/httpcore-4.2.3.wso2v1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-codec-1.2.jar"/>
-	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/AirlinesOnlinePaymentAxis2Client-0.0.1.jar"/>
 	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/axiom-api-1.2.11-wso2v6.jar"/>
 	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/axiom-impl-1.2.11-wso2v4.jar"/>
 	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/axis2-1.6.1-wso2v14.jar"/>
@@ -58,6 +56,7 @@
 	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/wsdl4j-1.6.2.jar"/>
 	<classpathentry kind="lib" path="src/com/eagleairug/onlinepayment/lib/XmlSchema-1.4.7.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/xxx.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/DSOnlineAirlinePaymentAxis2Client-0.0.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
