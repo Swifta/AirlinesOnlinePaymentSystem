@@ -124,13 +124,18 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 	private void setDetails(Details details){
 		NumberFormat fm = NumberFormat.getCurrencyInstance(Locale.US);
 		
-		this.lbName.setValue(details.getClient_name());
-		this.lbBookingRef.setValue(details.getBooking_ref());
-		this.lbCostUSD.setValue(fm.format(BigDecimal.valueOf(Double.valueOf(details.getCost()))));
-		
 		DecimalFormat dfm = (DecimalFormat) fm;
 		DecimalFormatSymbols dfms = dfm.getDecimalFormatSymbols();
-		dfms.setCurrencySymbol("");
+		dfms.setCurrencySymbol("USD ");
+		dfm.setDecimalFormatSymbols(dfms);
+		
+		this.lbName.setValue(details.getClient_name());
+		this.lbBookingRef.setValue(details.getBooking_ref());
+		this.lbCostUSD.setValue(dfm.format(BigDecimal.valueOf(Double.valueOf(details.getCost()))));
+		
+		
+		dfms = dfm.getDecimalFormatSymbols();
+		dfms.setCurrencySymbol("UGX ");
 		dfm.setDecimalFormatSymbols(dfms);
 		
 		this.lbRate.setValue(dfm.format(BigDecimal.valueOf(Double.valueOf(details.getRate()))));
