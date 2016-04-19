@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
+import java.util.HashMap;
 import java.util.Locale;
 
+import com.eagleairug.onlinepayment.controllers.thirdparty.MTNMomoClient;
 import com.eagleairug.onlinepayment.views.main.DDetailsUIDesign;
 import com.eagleairug.onlinepayment.ws.ds.DSOnlineAirlinePaymentStub.Details;
 import com.vaadin.server.VaadinRequest;
@@ -93,6 +95,27 @@ public class DDetailsUIController extends DDetailsUIDesign implements UIControll
 
 			@Override
 			public void buttonClick(ClickEvent event) {
+				
+				String narration = "Paying Eagle Air for: "+lbName.getValue()+". Ref:BU20160417AW01 Fair: $600.00. Ex. Rate: 3320/= ";
+				String msisdn = fMSISDN.getValue();
+				String msisdnNum = "FRI:&lt "+msisdn+" &gt/MSISDN";
+				String bf = lbBookingRef.getValue();
+				String acctRef = "FRI:&lt "+bf+" &gt/SP";
+				String dueAmt = lbCostUGX.getValue();
+				
+				HashMap<String, String> mapNamVal = new HashMap<String, String>();
+				mapNamVal.put("narration", narration);
+				mapNamVal.put("msisdn", msisdnNum);
+				mapNamVal.put("acctRef", acctRef);
+				mapNamVal.put("dueAmt", dueAmt);
+				
+				MTNMomoClient momo = new MTNMomoClient();
+				
+				if(!momo.sendRequestPaymentRequest(mapNamVal)){
+					lbErrorMsg.setValue("Error occured. Please try again later.");
+					return;
+				}
+					
 				
 				Window processingPopup = new Window("Processing...");
 				processingPopup.setContent(new DPaymentStateUIController(guid));

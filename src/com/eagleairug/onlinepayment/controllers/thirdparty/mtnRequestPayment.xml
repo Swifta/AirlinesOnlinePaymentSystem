@@ -1,0 +1,49 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:b2b="http://b2b.mobilemoney.mtn.zm_v1.0">
+  <soapenv:Header>
+    <RequestSOAPHeader xmlns="http://www.huawei.com.cn/schema/common/v2_1">
+      <spId>35000001</spId>
+      <spPassword>de96d901b3bad1db2aab76b7b0b202f2</spPassword>
+      <bundleID>256000039</bundleID>
+      <serviceId>35000001000035</serviceId>
+      <timeStamp>20160727</timeStamp>
+    </RequestSOAPHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <b2b:processRequest>
+      <serviceId>200</serviceId>
+      <parameter>
+        <name>DueAmount</name>
+        <value>10</value>
+      </parameter>
+      <parameter>
+        <name>MSISDNNum</name>
+        <value>FRI:&lt; MSISDNNum &gt;/MSISDN</value>
+      </parameter>
+      <parameter>
+        <name>ProcessingNumber</name>
+        <value>555</value>
+      </parameter>
+      <!-- <parameter>
+        <name>serviceId</name>
+        <value>101</value>
+      </parameter> -->
+      <parameter>
+        <name>AcctRef</name>
+        <value>FRI:&lt; AcctRef &gt; @water.company/SP</value>
+      </parameter>
+      <!-- <parameter>
+        <name>AcctBalance</name>
+        <value>555</value>
+      </parameter> -->
+      <!-- <parameter>
+        <name>MinDueAmount</name>
+        <value>121212</value>
+      </parameter> -->
+      <parameter>
+       <name>Narration</name>
+       <value></value>
+      </parameter>
+      
+    </b2b:processRequest>
+  </soapenv:Body>
+</soapenv:Envelope>

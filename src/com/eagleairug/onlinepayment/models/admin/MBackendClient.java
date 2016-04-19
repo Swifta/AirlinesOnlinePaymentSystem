@@ -1,4 +1,4 @@
-package com.eagleairug.onlinepayment.models.main;
+package com.eagleairug.onlinepayment.models.admin;
 
 import com.eagleairug.onlinepayment.ws.ds.DSOnlineAirlinePaymentStub;
 
@@ -7,7 +7,7 @@ public class MBackendClient implements MBackendClientInitializable {
 	static {
 		setDS();
 	}
-	private static void setDS(){
+	protected static void setDS(){
 		stub = DSStubInitializer.getDSStub();
 	}
 	

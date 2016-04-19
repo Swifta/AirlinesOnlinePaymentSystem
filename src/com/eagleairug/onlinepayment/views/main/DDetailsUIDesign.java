@@ -6,6 +6,7 @@ import com.vaadin.ui.Button;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Panel;
+import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.declarative.Design;
 
@@ -45,6 +46,8 @@ public class DDetailsUIDesign extends VerticalLayout {
 	protected Label lbRate;
 	protected Label lbCostUGX;
 	protected VerticalLayout cMobileNumber;
+	protected Label lbErrorMsg;
+	protected TextField fMSISDN;
 	protected HorizontalLayout cControls;
 	protected Button btnCancel;
 	protected Button btnBack;

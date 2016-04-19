@@ -10,9 +10,6 @@ import com.eagleairug.onlinepayment.ws.ds.DSOnlineAirlinePaymentStub.Validate_bo
 import com.eagleairug.onlinepayment.ws.ds.DataServiceFault;
 
 public class MBookingRef extends MBackendClient{
-	MBookingRef(){
-		super();
-	}
 	public static Details validateBookingRef(String bf){
 		if(stub == null){
 			System.err.println("DS not initialized.");

@@ -12,7 +12,7 @@ public class DDashboardUIController extends DDashboardUIDesign implements UICont
 	private static final long serialVersionUID = 7499676505056564604L;
 	
 	private DManagementUIController guid;
-	DDashboardUIController(DManagementUIController guid){
+	public DDashboardUIController(DManagementUIController guid){
 		init(guid);
 	}
 

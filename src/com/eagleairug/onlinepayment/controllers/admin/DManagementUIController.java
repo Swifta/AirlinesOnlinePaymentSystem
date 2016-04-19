@@ -1,5 +1,6 @@
 package com.eagleairug.onlinepayment.controllers.admin;
 
+import com.eagleairug.onlinepayment.controllers.agent.DBookingFormUIController;
 import com.eagleairug.onlinepayment.views.admin.DManagementUIDesign;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.Button.ClickEvent;
@@ -39,6 +40,7 @@ public class DManagementUIController extends DManagementUIDesign implements UICo
 	public void attachCommandListener(VaadinRequest request) {
 		attachDashboard();
 		attachNewUser();
+		attachNewReservation();
 		attachUsers();
 		attachReports();
 		attachLogout();
@@ -90,6 +92,23 @@ public class DManagementUIController extends DManagementUIDesign implements UICo
 			
 		});
 		
+	}
+	
+	private void attachNewReservation(){
+		this.btnNewReserv.addClickListener(new ClickListener(){
+
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 2637075833255513552L;
+
+			@Override
+			public void buttonClick(ClickEvent event) {
+				new DBookingFormUIController(guid);
+				
+			}
+			
+		});
 	}
 	
 	
